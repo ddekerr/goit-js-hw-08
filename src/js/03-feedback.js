@@ -59,4 +59,5 @@ function formSubmit(event) {
   // clear form fields
   this.reset();
   console.log(formData);
+  formData = {};
 }
