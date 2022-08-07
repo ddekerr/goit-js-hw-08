@@ -54,11 +54,13 @@ function formSubmit(event) {
   // cancel page reload
   event.preventDefault();
 
-  // clear form data from locale storage
+  // clear locale storage
   localStorage.removeItem(FORM_DATA_STORAGE_KEY);
   // clear form fields
   this.reset();
+
   console.log(formData);
+  // clear formData
   delete formData.email;
   delete formData.message;
 }
