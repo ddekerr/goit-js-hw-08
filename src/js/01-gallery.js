@@ -1,10 +1,7 @@
-// Add imports above this line
-
 import "simplelightbox/dist/simple-lightbox.min.css";
-// import SimpleLightbox from "simplelightbox";
-// const SimpleLightbox = require("simple-lightbox");
+import SimpleLightbox from "simplelightbox";
 import { galleryItems } from './gallery-items';
-// Change code below this line
+
 
 const lightboxConfig = {
   captions: true,
@@ -22,7 +19,6 @@ galleryContainer.insertAdjacentHTML('beforeend', createMarkupInnerGallery(galler
 // create lightbox instance and show
 const lightbox = new SimpleLightbox('.gallery__item', lightboxConfig);
 lightbox.on('show.simplelightbox');
-
 
 // create markup for each gallery object and join them in one string
 function createMarkupInnerGallery(galleryItems) {
